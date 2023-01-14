@@ -1,0 +1,21 @@
+body {
+ background-color: #E7ECFF;
+ display: flex;
+ flex-direction: column;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    
+}
+#icon {
+    height: auto;
+    width: 30px;
+}
+li {
+    font-size: 20px;
+}
