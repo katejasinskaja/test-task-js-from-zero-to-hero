@@ -13,7 +13,7 @@ font-size: 1.375rem;
 letter-spacing: -.01em;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -199,6 +199,13 @@ border-right: 35px black solid;
     border: 10px solid transparent;
     border-right: 25px white solid;
     top: 25px; 
-     
-    
+    }
+.current-job, .previous-job {
+display: flex;
+gap: 200px;
+margin-left: 70px;
+}
+.responsibilities {
+   margin-left: 0;
+   
 }
