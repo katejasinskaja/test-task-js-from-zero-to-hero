@@ -75,3 +75,12 @@ p {
     font-size: 20px;
 }
 
+.vertical {
+    width: 1px;
+    height: 200px;
+}
+
+.dots {
+    list-style-type: circle;
+}
+
