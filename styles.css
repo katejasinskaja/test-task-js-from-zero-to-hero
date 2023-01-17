@@ -1,14 +1,20 @@
 html {
     height: 100vh;
 }
+:root { --main-font-family: Manrope,sans-serif;
+    --header-color: rgb(40, 8, 47);
+    --border-color: rgb(54, 6, 65);
+    --shadow-color: rgb(91, 54, 100);
 
+
+}
 
 body {
 background: linear-gradient(45deg, #cb98d7 0%, #8ee3f6 100%) fixed;
 height: 100vh;
 display: flex;
 flex-direction: column; 
-font-family: Manrope,sans-serif;
+font-family: var(--main-font-family);
 font-size: 1.375rem;
 letter-spacing: -.01em;
 }
@@ -29,7 +35,7 @@ nav ul {
     width: 30px;
 
 }
-li {
+nav ul li {
     font-size: 20px;
     color:black;
     font-family: Coolvetica,sans-serif;
@@ -57,7 +63,7 @@ h1 {
     font-family: Coolvetica,sans-serif;
     font-weight: 600;
     margin-bottom: 10px;
-    color:rgb(40, 8, 47);
+    color: var(--header-color);
 }
 
 h4 {
@@ -80,8 +86,8 @@ hr {
     width: 4px;
     height: 600px;
     margin-top: 0px;
-    background-color: rgb(54, 6, 65);
-    border: rgb(54, 6, 65);
+    background-color: var(--border-color);
+    border: var(--border-color);
     
 }
 
@@ -97,15 +103,15 @@ hr {
     justify-content: center;
     text-align: center;
     margin-bottom: 70px;
-    color:rgb(40, 8, 47);
+    color: var(--header-color);
 }
 .education-stage {
     background-color: white;
     width: 350px;
     height: 200px;
-    border: 5px rgb(54, 6, 65) solid;
+    border: 5px var(--border-color) solid;
     border-radius: 20px;
-    box-shadow: 10px 10px 5px rgb(91, 54, 100);
+    box-shadow: 10px 10px 5px var(--shadow-color);
 }
 
 h5 {
@@ -113,6 +119,7 @@ h5 {
     margin-top: 15px;
     margin-bottom: 5px;
     font-size: 22px;
+    color: var(--border-color);
     
 }
 
@@ -127,7 +134,7 @@ h5 {
     margin-top: 10px;
     font-size: 15px;
     color: white;
-    background-color:rgb(54, 6, 65);
+    background-color: var(--border-color);
     margin-left: 90px;
     margin-right: 90px;
     box-shadow: 5px 5px 5px grey;
@@ -238,19 +245,28 @@ position: relative;
 margin-bottom: 100px;
 margin-left: 300px;
 display: flex;
-margin-right: 100px;
+margin-right: 200px;
 }
 .date {
-    background-color:bisque;
+    background-color: var(--border-color);
     height: 300px;
     width: 300px;
     position: absolute;
-    top: -20px;
-    left: -190px;
+    top: -17px;
+    left: -187px;
     z-index:1;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex:1;
+}
+
+
+
+
+.date h5 {
+    color: white;
+
 }
 
 .description {
@@ -259,11 +275,45 @@ margin-right: 100px;
     height: 300px;
     position: relative;
     left: 90px;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-top: 0;
+    flex:1;
+    border: 3px solid var(--border-color);
+    }
+.description::after {
+    content:'';
+    position: absolute;
+    left: 0px; bottom: 0px;
+    border: 10px solid transparent;
+    border-left: 10px solid var(--shadow-color) ;
+    border-top: 10px solid var(--shadow-color);
+}
+h6 {
+    margin-top:20px;
+    font-size: 20px;
+    margin-bottom: 2px;
+    color: var(--header-color);
+
     
 
-
+}
+.responsibilities {
+    font-size: 17px;
+    
+}
+.description ul {
+    margin:0px;
+    padding:0px;
+    margin-left: 30px; 
+    font-size: 15px;  
+}
+.description p {
+    margin-top:0;
+    font-size: 17px;
+}
+.description ul li {
+    margin-bottom: 3px;
+    margin-top: 5px;
 }
 .skills {
     display: flex;
@@ -275,7 +325,7 @@ margin-right: 100px;
     width: 300px;
     height: 400px;
     background-color: rgb(237, 237, 237);
-    border: 5px rgb(40, 8, 47) solid;
+    border: 5px var(--border-color) solid;
     border-radius: 20px;
     
 }
