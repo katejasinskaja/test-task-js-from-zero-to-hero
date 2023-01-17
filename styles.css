@@ -74,14 +74,14 @@ hr {
 
 }
 
-p {
-    font-size: 20px;
-}
+
 
 .vertical {
-    width: 1px;
+    width: 4px;
     height: 600px;
     margin-top: 0px;
+    background-color: rgb(54, 6, 65);
+    border: rgb(54, 6, 65);
     
 }
 
@@ -103,9 +103,9 @@ p {
     background-color: white;
     width: 350px;
     height: 200px;
-    border: 5px rgb(40, 8, 47) solid;
+    border: 5px rgb(54, 6, 65) solid;
     border-radius: 20px;
-    
+    box-shadow: 10px 10px 5px rgb(91, 54, 100);
 }
 
 h5 {
@@ -113,17 +113,46 @@ h5 {
     margin-top: 15px;
     margin-bottom: 5px;
     font-size: 22px;
+    
 }
 
 .grade {
     font-style: italic;
     font-size: 15px;
+    margin-top: 7px;
 }
 
-.education-stage p {
+.year {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: white;
+    background-color:rgb(54, 6, 65);
+    margin-left: 90px;
+    margin-right: 90px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.speciality {
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+.education-stage p{
     text-align: center;
 
 }
+
+.left-side .education-stage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.left-side h5 {
+    margin-top: 0px;
+}
+
 
 #university {
     margin-left: 20px;
@@ -143,12 +172,13 @@ h5 {
 }
 .dot {
     border-radius: 50%;
-    background-color: black;
+    background-color: white;
     height: 10px;
     width: 10px;
     position: absolute;
-    left: 37.5px;
+    left: 36px;
     top: 44px;   
+    border: 1px solid black;
 }
 
 .second-dot {
@@ -200,10 +230,40 @@ border-right: 35px black solid;
     border-right: 25px white solid;
     top: 25px; 
     }
+
+
+
 .current-job, .previous-job {
+position: relative;
+margin-bottom: 100px;
+margin-left: 300px;
 display: flex;
-gap: 200px;
-margin-left: 70px;
+margin-right: 100px;
+}
+.date {
+    background-color:bisque;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: -20px;
+    left: -190px;
+    z-index:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    background-color: white;
+    width: 700px;
+    height: 300px;
+    position: relative;
+    left: 90px;
+    padding-left: 30px;
+    padding-top: 0;
+    
+
+
 }
 .skills {
     display: flex;
