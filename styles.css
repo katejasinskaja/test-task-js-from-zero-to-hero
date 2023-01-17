@@ -205,7 +205,24 @@ display: flex;
 gap: 200px;
 margin-left: 70px;
 }
-.responsibilities {
-   margin-left: 0;
-   
+.skills {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.skills div {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(237, 237, 237);
+    border: 5px rgb(40, 8, 47) solid;
+    border-radius: 20px;
+    
+}
+.interests {
+    display: flex;
+    justify-content: space-between;
+    gap: 500px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
