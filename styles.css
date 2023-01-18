@@ -22,7 +22,7 @@ header {
     background: linear-gradient(45deg, #cb98d7 0%, #8ee3f6 100%) fixed;  
 position: fixed;  
 top: 0;  
-z-index: 100;  
+z-index: 1;  
 width: 100%; 
 }
 
@@ -69,16 +69,18 @@ nav ul li {
 #my-picture {
     height: auto;
     width: 300px;
-    margin-left: 50px;
+    margin-left: 70px;
     border-radius: 300px;
+    margin-right: 0px;
 }
 #introduction {
     display: flex;
     align-items: center;
     margin-top: 100px;
-    margin-right: 100px;
-    gap: 70px; 
-    margin-bottom: 200px;  
+    margin-right: 100px; 
+    margin-bottom: 200px; 
+    margin-left: 20px; 
+    gap: 70px;
 }
 h1 {
     font-size: 50px;
@@ -135,6 +137,7 @@ hr {
     border: 5px var(--border-color) solid;
     border-radius: 20px;
     box-shadow: 10px 10px 5px var(--shadow-color);
+    
 }
 
 h5 {
@@ -178,6 +181,7 @@ h5 {
     flex-direction: column;
     justify-content: center;
     
+    
 }
 .left-side h5 {
     margin-top: 0px;
@@ -194,11 +198,13 @@ h5 {
     gap: 140px;
     margin-left: auto;
     margin-top: 10px;
+  
 
 }
 .right-side {
     margin-right: auto;
     margin-top: 180px;
+    
 }
 .dot {
     border-radius: 50%;
@@ -232,7 +238,7 @@ position: absolute;
 left: 350px;
 top: 20px;
 border: 15px solid transparent;
-border-left: 35px black solid;
+border-left: 35px var(--border-color) solid;
 
 }
 .left-side .education-stage::after {
@@ -252,7 +258,7 @@ position: absolute;
 right: 350px;
 top: 20px;
 border: 15px solid transparent;
-border-right: 35px black solid;
+border-right: 35px var(--border-color) solid;
 
 }
 .right-side .education-stage::after {
@@ -272,16 +278,18 @@ margin-right: 200px;
 }
 .date {
     background-color: var(--border-color);
-    height: 300px;
-    width: 300px;
+    height: 98%;
+    width: 40.5%;
     position: absolute;
-    top: -17px;
-    left: -187px;
+    top: -5.6%;
+    left: -25.3%;
     z-index:1;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex:1;
+    
+    
+    
 }
 
 
@@ -295,12 +303,13 @@ margin-right: 200px;
 .description {
     background-color: white;
     width: 700px;
-    height: 300px;
+    
     position: relative;
     left: 90px;
     padding-left: 50px;
     padding-top: 0;
     flex:1;
+    min-height: 300px;
     border: 3px solid var(--border-color);
     }
 .description::after {
@@ -322,6 +331,7 @@ h6 {
 }
 .responsibilities {
     font-size: 17px;
+   
     
 }
 .description ul {
@@ -344,6 +354,8 @@ h6 {
     margin-left: 70px;
     margin-right: 70px;
     flex-wrap: wrap;
+    gap: 50px
+    
 }
 .skills div {
     width: 300px;
@@ -351,6 +363,8 @@ h6 {
     background-color: white;
     border: 5px var(--border-color) solid;
     border-radius: 20px;
+    margin-bottom: 10px;
+
     
 }
 #skill-type {
