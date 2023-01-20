@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    
     <title>Resume</title>
 </head>
 <body>
@@ -11,12 +11,12 @@
         <nav>
             <ul>
             
-                <li><a class="header" href='#about'>About</a></li>
+                <li><a class="header active" href='#about'>About</a></li>
                 <li><a class="header" href='#education'>Education</a></li>
                 <li><a class="header" href='#experience'>Experience</a></li>
-                <li><a class="header" class="header" href='#myskills'>Skills</a></li>
-                <li><a class="header" href='#my-interests'>Interests</a></li>
-                <li><div class="dropdown"><a class="header" id="contacts" href='#my-contacts'>Contacts</a>
+                <li><a class="header" class="header" href='#skills'>Skills</a></li>
+                <li><a class="header" href='#interests'>Interests</a></li>
+                <li><a class="header arrow" href='#contacts'>Contacts</a><div class="dropdown"></div>
                   <div class="dropdown-content">     
             <a href="https://www.facebook.com/profile.php?id=100004163925749"> <img id="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" />
             </a>
@@ -32,9 +32,9 @@
            
         </nav>
     </header>
-    <a name="about"></a>
+    
     <main>
-        <section id="introduction">
+        <section id="about">
             <div class="picture">
                <img id="my-picture" src="my-picture.png" alt="picture">
             </div>
@@ -47,7 +47,7 @@
         </section>
         
         <hr>
-        <a name="education"></a> 
+         
         <section id="education">
             <h4 class="section-head reveal fade-bottom">Education</h4>
             <div class="education">
@@ -84,7 +84,7 @@
             </div>
           </section>
           <hr>
-          <section id="experience"><a name="experience"></a>
+          <section id="experience">
             <h4 class="section-head reveal fade-bottom">Experience</h4>
                <div class="current-job reveal fade-left">
                 <div class="date">
@@ -123,8 +123,8 @@
           
           <hr>
 
-          <a name="myskills"></a>
-          <section>
+          
+          <section id="skills">
             
             <h4 class="section-head reveal fade-bottom">Skills</h4>
               <div class="skills">
@@ -160,10 +160,10 @@
               </div>
              
           </section>
-          <a name="my-interests"></a>
+          
           <hr>
           
-          <section> 
+          <section id="interests"> 
             <h4 class="section-head reveal fade-bottom" id="interests">Interests</h4>
             <div class="interests">
             <div class="reveal fade-bottom" id="interests-description">In my freetime I enjoy playing the guitare, going out with my friends or doing sports. Also I am keen on spending cozy evenings with an exciting book and a cup of fragrant tea. Besides, I am fond of learning languages, love travelling and exploring the beauty of our world.</div>
@@ -209,16 +209,19 @@
             </section>
           <hr>
           
-    </main>
-    <footer> <a name="my-contacts"></a>
+    
+          <section id="contacts"> 
       <h4 class="section-head reveal fade-bottom">Contacts</h4>
-      <ul class="contacts" id="footer"><li class="reveal fade-bottom"><b>Location:</b> Minsk, Belarus</li>
+      <ul class="contacts" id="footer">
+        <li class="reveal fade-bottom"><b>Location:</b> Minsk, Belarus</li>
         <li class="reveal fade-bottom"><b>Email:</b> katherine_yasinskaya@mail.ru</li>
         <li class="reveal fade-bottom"><b>Phone:</b> +375292183723</li>
         <li class="reveal fade-bottom"><b>LinkedIn: </b><a href="https://www.linkedin.com/in/katherine- yasinskaya-91a086218">https://www.linkedin.com/in/katherine- yasinskaya-91a086218</a> </li>
         <li class="reveal fade-bottom"><b>GitHub: </b><a href="https://github.com/katejasinskaja">https://github.com/katejasinskaja</a></li>
       </ul>
-    </footer>
-      
+           </section>
+  </main>
+  <script src="script.js"></script>     
 </body>
+
 </html>
