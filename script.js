@@ -9,9 +9,9 @@
      let id = i.getAttribute("id");
      if (top >= offset && top < offset + height) {
        menu.forEach((link) => {
-         link.classList.remove("active");
+         link.classList.remove("menu__menu-item_active");
          document.querySelector("header nav ul li a[href*=" + id + "]")
-           .classList.add("active");
+           .classList.add("menu__menu-item_active");
        });
      }
    });

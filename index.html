@@ -3,43 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    
+    <link rel="stylesheet" href="menu-styles.css">
+    <link rel="stylesheet" href="education-styles.css">
+    <link rel="stylesheet" href="experience-styles.css">
+    <link rel="stylesheet" href="skills-styles.css">
+    <link rel="stylesheet" href="interests-styles.css">
     <title>Resume</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="menu">
             <ul>
             
-                <li><a class="header active" href='#about'>About</a></li>
-                <li><a class="header" href='#education'>Education</a></li>
-                <li><a class="header" href='#experience'>Experience</a></li>
-                <li><a class="header" class="header" href='#skills'>Skills</a></li>
-                <li><a class="header" href='#interests'>Interests</a></li>
-                <li><a class="header arrow" href='#contacts'>Contacts</a><div class="dropdown"></div>
-                  <div class="dropdown-content">     
-            <a href="https://www.facebook.com/profile.php?id=100004163925749"> <img id="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" />
-            </a>
-            <a href="https://www.linkedin.com/in/katherine- yasinskaya-91a086218"><img id="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
-            </a>
-            <a href="https://github.com/katejasinskaja"><img id="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-            </a>
+                <li><a class="menu__menu-item menu__menu-item_active" href='#about'>About</a></li>
+                <li><a class="menu__menu-item" href='#education'>Education</a></li>
+                <li><a class="menu__menu-item" href='#experience'>Experience</a></li>
+                <li><a class="menu__menu-item" href='#skills'>Skills</a></li>
+                <li><a class="menu__menu-item" href='#interests'>Interests</a></li>
+                <li><div class="menu__dropdown-menu"><a class="menu__menu-item" id="arrow" href='#contacts'>Contacts</a>
+                       <div class="menu__dropdown-content">     
+                           <a href="https://www.facebook.com/profile.php?id=100004163925749"> <img class="menu__dropdown-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" />
+                           </a>
+                           <a href="https://www.linkedin.com/in/katherine- yasinskaya-91a086218"><img class="menu__dropdown-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
+                           </a>
+                           <a href="https://github.com/katejasinskaja"><img class="menu__dropdown-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                           </a>
           
-                  </div>
-                </div>
-              </li>
-            </ul> 
-           
+                        </div>
+                     </div>
+                 </li>
+            </ul>           
         </nav>
     </header>
     
     <main>
-        <section id="about">
-            <div class="picture">
-               <img id="my-picture" src="my-picture.png" alt="picture">
+        <section class="about" id="about">
+            <div class="about__picture reveal fade-bottom">
+               <img id="picture" src="my-picture.png" alt="picture">
             </div>
-            <div class="introduction">
-               <h1 class="name animated">Kate Yasinskaya</h1>
+            <div class="about__text reveal fade-bottom">
+               <h1>Kate Yasinskaya</h1>
                <h4>Trainee Front-End Developer</h4>
                <p>I am aiming to become a skillful front-end developer and currently seeking for new opportunities and challenges that will expand my expertise and foster professional growth.</p>
             </div>
@@ -48,68 +51,70 @@
         
         <hr>
          
-        <section id="education">
-            <h4 class="section-head reveal fade-bottom">Education</h4>
-            <div class="education">
-              <div class="left-side">
-                 <div class="education-stage reveal fade-bottom">
+        <section class="education" id="education">
+            <h4 class="education__title title reveal fade-bottom">Education</h4>
+            <div class="education__content">
+              <div class="education__left-side">
+                 <div class="education__education-stage reveal fade-bottom">
                    <h5>BSU Lyceum</h5>
-                   <p class="speciality">Philology</p>
-                   <p class="year">2016-2018</p>
-                   <p class="grade">Grade: 10.0</p>
+                   <p class="education__speciality">Philology</p>
+                   <p class="education__year">2016-2018</p>
+                   <p class="education__grade">Grade: 10.0</p>
                  </div>
-                 <div class="education-stage reveal fade-bottom">
+                 <div class="education__education-stage reveal fade-bottom">
                    <h5>Course “The Odin Project”:
                     </h5>
-                   <p class="speciality"><a href="https://www.theodinproject.com/">https://www.theodinproject.com/</a></p>
-                   <p class="year">October 2022 – till now</p>
+                   <p class="education__speciality"><a href="https://www.theodinproject.com/">https://www.theodinproject.com/</a></p>
+                   <p class="education__year">October 2022 – till now</p>
                  </div>
               </div>
-              <div id="line-with-dots">
+              <div class="education__line-with-dots line-with-dots">
             
-               <hr class="vertical">
-               <div class="dot first-dot"></div>
-               <div class="dot second-dot"></div>
-               <div class="dot third-dot"></div>
+               <hr class="education__vertical-line vertical-line">
+               <div class="education__dot education__first-dot"></div>
+               <div class="education__dot education__second-dot"></div>
+               <div class="education__dot education__third-dot"></div>
     
               </div>
-              <div class="right-side">
-                 <div class="education-stage reveal fade-bottom" id="mslu">
+              <div class="education__right-side">
+                 <div class="education__education-stage reveal fade-bottom" id="mslu">
                    <h5 id="university">Minsk State Linguistic University </h5>
-                   <p class="speciality">Translation and interpretation (English, German)</p>
-                   <p class="year">2018-2023</p>
-                   <p class="grade">Grade: 9.5</p>
+                   <p class="education__speciality">Translation and interpretation (English, German)</p>
+                   <p class="education__year">2018-2023</p>
+                   <p class="education__grade">Grade: 9.5</p>
                  </div>
               </div>
             </div>
           </section>
+
           <hr>
-          <section id="experience">
-            <h4 class="section-head reveal fade-bottom">Experience</h4>
-               <div class="current-job reveal fade-left">
-                <div class="date">
+
+          <section class="experience" id="experience">
+            <h4 class="experience__title title reveal fade-bottom">Experience</h4>
+               <div class="experience__current-job reveal fade-left">
+                <div class="experience__date">
                   <h5>September 2022 - till now</h5>
                 </div>
                   
-                  <div class="description">
+                  <div class="experience__description">
                     
                     <h6>Support Manager </h6>
                     <p>EBS Partners </p>
-                    <ul><h6 class="responsibilities">Key responsibilities:</h6>
+                    <ul><h6 class="experience__responsibilities">Key responsibilities:</h6>
                         <li>Providing support for logistics and corporate systems;</li>
                         <li>Classification and assignment of tickets according to the system and the line of support;</li>
                         <li>Participating in corporate Knowledge Base development; </li>
                       </ul>
                   </div>
                 </div>
-                <div class="previous-job reveal fade-left">
-                  <div class="date">
+                <div class="experience__previous-job reveal fade-left">
+                  <div class="experience__date">
                   <h5>August 2021 - August 2022</h5>
                    </div>
-                   <div class="description">
+                   <div class="experience__description">
                   <h6>Customer Support Representative </h6>
                   <p>Solbeg_ </p>
-                  <ul><h6 class="responsibilities">Key responsibilities:</h6>
+                  <ul><h6 class="experience__responsibilities">Key responsibilities:</h6>
                      <li>Answering calls via telephone;</li>
                      <li>Providing guidance on how to create and complete profiles;</li>
                      <li>Logging of service desk tickets, ensuring all the details of the issue were provided; </li>
@@ -124,11 +129,11 @@
           <hr>
 
           
-          <section id="skills">
+          <section class="skills" id="skills">
             
-            <h4 class="section-head reveal fade-bottom">Skills</h4>
-              <div class="skills">
-                <div class="personal reveal fade-right">
+            <h4 class="skills__title title reveal fade-bottom">Skills</h4>
+              <div class="skills__content">
+                <div class="reveal fade-right">
                   <ul id="skills"><h5 id="skill-type">Personal:</h5>
                     <li>Problem-solving</li>
                     <li>Teamwork</li>
@@ -136,7 +141,7 @@
                     <li>Diligency</li>
                   </ul>
                 </div>
-                <div class="professional reveal fade-right">
+                <div class="reveal fade-right">
                   <ul id="skills"><h5 id="skill-type">Professional:</h5>
                      <li>HTML</li>
                      <li>CSS</li>
@@ -145,7 +150,7 @@
                      <li>Git</li>
                 </ul>
                 </div>
-                <div class="languages reveal fade-right">
+                <div class="reveal fade-right">
                   <ul id="skills">
                   <h5 id="skill-type">Languages</h5>
                      <li>Belarusian - native</li>
@@ -163,12 +168,12 @@
           
           <hr>
           
-          <section id="interests"> 
-            <h4 class="section-head reveal fade-bottom" id="interests">Interests</h4>
-            <div class="interests">
-            <div class="reveal fade-bottom" id="interests-description">In my freetime I enjoy playing the guitare, going out with my friends or doing sports. Also I am keen on spending cozy evenings with an exciting book and a cup of fragrant tea. Besides, I am fond of learning languages, love travelling and exploring the beauty of our world.</div>
+          <section class="interests" id="interests"> 
+            <h4 class="interests__title title reveal fade-bottom">Interests</h4>
+            <div class="interests__content">
+            <div class="interests__text reveal fade-bottom">In my freetime I enjoy playing the guitare, going out with my friends or doing sports. Also I am keen on spending cozy evenings with an exciting book and a cup of fragrant tea. Besides, I am fond of learning languages, love travelling and exploring the beauty of our world.</div>
            
-              <div class="all">
+              <div class="interests__slider">
                 <input checked type="radio" name="respond" id="desktop">
                   <article id="slider">
                       <input checked type="radio" name="slider" id="switch1">
@@ -179,10 +184,10 @@
                     <div id="slides">
                       <div id="overflow">
                         <div class="image">
-                          <article><img src="first-picture.png"></article>
-                          <article><img src="second-picture.png"></article>
-                          <article><img src="third-picture.png"></article>
-                          <article><img src="fourth-picture.png"></article>
+                          <article><img src="slider/first-picture.png"></article>
+                          <article><img src="slider/second-picture.png"></article>
+                          <article><img src="slider/third-picture.png"></article>
+                          <article><img src="slider/fourth-picture.png"></article>
                         
                         </div>
                       </div>
@@ -206,13 +211,13 @@
 
               
           </div>
-            </section>
+          </section>
           <hr>
           
     
-          <section id="contacts"> 
-      <h4 class="section-head reveal fade-bottom">Contacts</h4>
-      <ul class="contacts" id="footer">
+          <section class="contacts" id="contacts"> 
+      <h4 class="contacts__title title reveal fade-bottom">Contacts</h4>
+      <ul class="contacts__content">
         <li class="reveal fade-bottom"><b>Location:</b> Minsk, Belarus</li>
         <li class="reveal fade-bottom"><b>Email:</b> katherine_yasinskaya@mail.ru</li>
         <li class="reveal fade-bottom"><b>Phone:</b> +375292183723</li>

@@ -1,0 +1,79 @@
+.experience__current-job, .experience__previous-job {
+
+    margin-bottom: 100px;
+    display: flex;
+    min-height: 300px;
+    margin-left: 13%;
+    margin-right: 13%;
+    }
+    
+    .experience__description {
+        background-color: white;
+        
+        position: relative;
+        padding-left: 50px;
+        padding-top: 0;
+        padding-right: 10px;
+        border: 3px solid var(--border-color);
+        
+        }
+    
+    .experience__date {
+        background-color: var(--border-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 21px;
+        left: 23px;
+        z-index: 1;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+    .experience__description::after {
+        content: '';
+        position: absolute;
+        bottom: -0.5%;
+        left: 0%;
+        
+    
+        border: 10px solid transparent;
+        border-left: 10px  solid var(--shadow-color) ;
+        border-top: 10px solid var(--shadow-color);
+    
+    }
+    
+    
+    .experience__date h5 {
+        color: white;
+    
+    }
+    
+    
+    h6 {
+        margin-top:20px;
+        font-size: 20px;
+        margin-bottom: 2px;
+        color: var(--header-color);
+    
+    }
+    .experience__responsibilities {
+        font-size: 17px;
+       
+        
+    }
+    .experience__description ul {
+        margin:0px;
+        padding:0px;
+        margin-left: 30px; 
+        font-size: 15px;  
+    }
+    .experience__description p {
+        margin-top:0;
+        font-size: 17px;
+    }
+    .experience__description ul li {
+        margin-bottom: 3px;
+        margin-top: 5px;
+    }
