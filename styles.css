@@ -22,7 +22,8 @@ margin:0;
 }
 header {
 background: linear-gradient(45deg, #cb98d7 0%, #8ee3f6 100%) fixed;  
-position: fixed;  
+position: fixed; 
+padding: 15px; 
 top: 0;  
 z-index: 2;  
 width: 100%; 
@@ -30,15 +31,20 @@ box-shadow: 3px 3px 3px;
 }
 
 
+
+
+
 nav ul, .contacts {
     list-style-type: none;
     margin: 0;
+    margin-top: -10px;
     padding: 0;
     display: flex;
     gap: 30px;
     justify-content: flex-end;
-    margin-right: 30px; 
-    margin-top: 20px;  
+    margin-right: 60px; 
+    margin-top: 10px; 
+    
     
 }
 #footer {
@@ -53,7 +59,8 @@ footer {
 }
 #icon {
     height: auto;
-    width: 30px;
+    width: 40px;
+    
 
 }
 nav ul li {
@@ -63,6 +70,8 @@ nav ul li {
     font-weight: 400;
     letter-spacing: .02em;
     text-transform: uppercase;
+  
+
 }
 #my-picture {
     height: auto;
@@ -401,6 +410,7 @@ h6 {
     border: 5px var(--border-color) solid;
     border-radius: 20px;
     margin-bottom: 10px;
+    
 
     
 }
@@ -586,3 +596,111 @@ a:hover {
     text-decoration: underline;
     font-size: 1.4rem;
    }
+
+   .dropdown {
+    position: relative;
+    display: inline-block;
+   }
+.dropdown-content {
+ display: none;
+ position: absolute;
+ z-index: 1;
+ text-align: center;
+
+}
+#icon {
+    width: 45%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 50%;
+    z-index:3;
+}
+.dropdown-content a {
+    display: block;
+    
+}
+
+
+.dropdown-content a:hover {transform: scale(1.2)}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover #contacts {background-color: var(--header-color);
+    color: white;
+    padding: 10px;
+    text-decoration: none;}
+
+#contacts:after {
+
+ content: '';
+  display: block;
+  position: absolute;
+  bottom: 30%;
+  left: 103%; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 0; 
+  height: 0; 
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid var(--header-color);
+}
+
+.header:hover, .header:focus, header nav ul li a.active  {
+    background-color: var(--header-color);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+  }
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+
+

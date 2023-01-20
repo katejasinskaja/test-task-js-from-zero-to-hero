@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Resume</title>
 </head>
 <body>
@@ -10,13 +11,23 @@
         <nav>
             <ul>
             
-                <li><a href='#about'>About</a></li>
-                <li><a href='#education'>Education</a></li>
-                <li><a href='#experience'>Experience</a></li>
-                <li><a href='#myskills'>Skills</a></li>
-                <li><a href='#interests'>Interests</a></li>
-                <li><a href='#contacts'>Contacts</a></li>
-                <li><img id="icon" src="icon-networks.png" alt="icon"></li>
+                <li><a class="header" href='#about'>About</a></li>
+                <li><a class="header" href='#education'>Education</a></li>
+                <li><a class="header" href='#experience'>Experience</a></li>
+                <li><a class="header" class="header" href='#myskills'>Skills</a></li>
+                <li><a class="header" href='#my-interests'>Interests</a></li>
+                <li><div class="dropdown"><a class="header" id="contacts" href='#my-contacts'>Contacts</a>
+                  <div class="dropdown-content">     
+            <a href="https://www.facebook.com/profile.php?id=100004163925749"> <img id="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" />
+            </a>
+            <a href="https://www.linkedin.com/in/katherine- yasinskaya-91a086218"><img id="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
+            </a>
+            <a href="https://github.com/katejasinskaja"><img id="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+            </a>
+          
+                  </div>
+                </div>
+              </li>
             </ul> 
            
         </nav>
@@ -28,7 +39,7 @@
                <img id="my-picture" src="my-picture.png" alt="picture">
             </div>
             <div class="introduction">
-               <h1>Kate Yasinskaya</h1>
+               <h1 class="name animated">Kate Yasinskaya</h1>
                <h4>Trainee Front-End Developer</h4>
                <p>I am aiming to become a skillful front-end developer and currently seeking for new opportunities and challenges that will expand my expertise and foster professional growth.</p>
             </div>
@@ -37,17 +48,17 @@
         
         <hr>
         <a name="education"></a> 
-        <section>
-            <h4 class="section-head">Education</h4>
+        <section id="education">
+            <h4 class="section-head reveal fade-bottom">Education</h4>
             <div class="education">
               <div class="left-side">
-                 <div class="education-stage">
+                 <div class="education-stage reveal fade-bottom">
                    <h5>BSU Lyceum</h5>
                    <p class="speciality">Philology</p>
                    <p class="year">2016-2018</p>
                    <p class="grade">Grade: 10.0</p>
                  </div>
-                 <div class="education-stage">
+                 <div class="education-stage reveal fade-bottom">
                    <h5>Course “The Odin Project”:
                     </h5>
                    <p class="speciality"><a href="https://www.theodinproject.com/">https://www.theodinproject.com/</a></p>
@@ -63,7 +74,7 @@
     
               </div>
               <div class="right-side">
-                 <div class="education-stage" id="mslu">
+                 <div class="education-stage reveal fade-bottom" id="mslu">
                    <h5 id="university">Minsk State Linguistic University </h5>
                    <p class="speciality">Translation and interpretation (English, German)</p>
                    <p class="year">2018-2023</p>
@@ -74,8 +85,8 @@
           </section>
           <hr>
           <section id="experience"><a name="experience"></a>
-            <h4 class="section-head">Experience</h4>
-               <div class="current-job">
+            <h4 class="section-head reveal fade-bottom">Experience</h4>
+               <div class="current-job reveal fade-left">
                 <div class="date">
                   <h5>September 2022 - till now</h5>
                 </div>
@@ -91,7 +102,7 @@
                       </ul>
                   </div>
                 </div>
-                <div class="previous-job">
+                <div class="previous-job reveal fade-left">
                   <div class="date">
                   <h5>August 2021 - August 2022</h5>
                    </div>
@@ -115,9 +126,9 @@
           <a name="myskills"></a>
           <section>
             
-            <h4 class="section-head">Skills</h4>
+            <h4 class="section-head reveal fade-bottom">Skills</h4>
               <div class="skills">
-                <div class="personal">
+                <div class="personal reveal fade-right">
                   <ul id="skills"><h5 id="skill-type">Personal:</h5>
                     <li>Problem-solving</li>
                     <li>Teamwork</li>
@@ -125,7 +136,7 @@
                     <li>Diligency</li>
                   </ul>
                 </div>
-                <div class="professional">
+                <div class="professional reveal fade-right">
                   <ul id="skills"><h5 id="skill-type">Professional:</h5>
                      <li>HTML</li>
                      <li>CSS</li>
@@ -134,7 +145,7 @@
                      <li>Git</li>
                 </ul>
                 </div>
-                <div class="languages">
+                <div class="languages reveal fade-right">
                   <ul id="skills">
                   <h5 id="skill-type">Languages</h5>
                      <li>Belarusian - native</li>
@@ -147,13 +158,15 @@
 
                 </div>
               </div>
+             
           </section>
+          <a name="my-interests"></a>
           <hr>
-          <a name="interests"></a>
+          
           <section> 
-            <h4 class="section-head" id="interests">Interests</h4>
+            <h4 class="section-head reveal fade-bottom" id="interests">Interests</h4>
             <div class="interests">
-            <div id="interests-description">In my freetime I enjoy playing the guitare, going out with my friends or doing sports. Also I am keen on spending cozy evenings with an exciting book and a cup of fragrant tea. Besides, I am fond of learning languages, love travelling and exploring the beauty of our world.</div>
+            <div class="reveal fade-bottom" id="interests-description">In my freetime I enjoy playing the guitare, going out with my friends or doing sports. Also I am keen on spending cozy evenings with an exciting book and a cup of fragrant tea. Besides, I am fond of learning languages, love travelling and exploring the beauty of our world.</div>
            
               <div class="all">
                 <input checked type="radio" name="respond" id="desktop">
@@ -197,15 +210,15 @@
           <hr>
           
     </main>
-    <footer> <a name="contacts"></a>
-      <h4 class="section-head">Contacts</h4>
-      <ul class="contacts" id="footer"><li><b>Location:</b> Minsk, Belarus</li>
-        <li><b>Email:</b> katherine_yasinskaya@mail.ru</li>
-        <li><b>Phone:</b> +375292183723</li>
-        <li><b>LinkedIn: </b><a href="https://www.linkedin.com/in/katherine- yasinskaya-91a086218">https://www.linkedin.com/in/katherine- yasinskaya-91a086218</a> </li>
-        <li><b>GitHub: </b><a href="https://github.com/katejasinskaja">https://github.com/katejasinskaja</a></li>
+    <footer> <a name="my-contacts"></a>
+      <h4 class="section-head reveal fade-bottom">Contacts</h4>
+      <ul class="contacts" id="footer"><li class="reveal fade-bottom"><b>Location:</b> Minsk, Belarus</li>
+        <li class="reveal fade-bottom"><b>Email:</b> katherine_yasinskaya@mail.ru</li>
+        <li class="reveal fade-bottom"><b>Phone:</b> +375292183723</li>
+        <li class="reveal fade-bottom"><b>LinkedIn: </b><a href="https://www.linkedin.com/in/katherine- yasinskaya-91a086218">https://www.linkedin.com/in/katherine- yasinskaya-91a086218</a> </li>
+        <li class="reveal fade-bottom"><b>GitHub: </b><a href="https://github.com/katejasinskaja">https://github.com/katejasinskaja</a></li>
       </ul>
     </footer>
-    
+      
 </body>
 </html>
